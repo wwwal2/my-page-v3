@@ -1,4 +1,4 @@
-const actionOne = (payload) => ({type:"ONE", payload});
-const actionTwo = (payload) => ({type:"TWO", payload});
+const add = (payload) => ({type:"ADD", payload});
+const remove = (payload) => ({type:"REMOVE", payload});
 
-export { actionOne, actionTwo }
+export { add, remove }

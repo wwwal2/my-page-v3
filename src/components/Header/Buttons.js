@@ -1,5 +1,6 @@
 import React from 'react';
-import { buttonsData } from './buttonsData'
+import { buttonsData } from './buttonsData';
+import { Link } from 'react-router-dom';
 
 
 
@@ -8,13 +9,15 @@ const Buttons = (props) => {
         <React.Fragment>
             {buttonsData.map((item) => {
                 return (
-                    <button 
-                        onClick={() => console.log("Click")}
-                        key={item.key} 
-                        style={{...item.position}}
-                        > 
-                            {item.textContent}
-                    </button>
+                    <Link 
+                    to={item.linkTo} 
+                    key={item.key} 
+                    style={{...item.position}}
+                    >
+                        <button> 
+                                {item.textContent}
+                        </button>
+                    </Link>
                 )
             })}
         </React.Fragment>
