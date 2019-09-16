@@ -15,7 +15,7 @@ function Header() {
     return (
         <header className="Header">
             <input type="image" src={ava} className="Ava" alt="ava" onClick={openLink} />
-            <b>MY TUTORIAL WEB PAGE</b>
+            <b>MY WEB PAGE v 2.0</b>
             <Buttons />
             <img src={logo} className="App-logo" alt="logo" />
         </header>

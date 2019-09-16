@@ -12,7 +12,7 @@ export const buttonsData = [
         linkTo: 'page2'
     },
     {
-        textContent: "Profiles",
+        textContent: "API",
         key: 3,
         position: {"gridColumn": 11},
         linkTo: 'page3'

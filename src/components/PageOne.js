@@ -16,14 +16,14 @@ function PageOne() {
                     <Col>
                         <Card  style={cardStyle}>
                             <CardTitle tag="h3" className="text-center">
-                                Pure js hand-made module
+                                Pure js module
                             </CardTitle>
                         </Card>
                     </Col> 
                     <Col>
                         <Card  style={cardStyle}>
                             <CardTitle tag="h3" className="text-center">
-                                reactStrap Carousel
+                                Carousel
                             </CardTitle>
                         </Card>
                     </Col>  
