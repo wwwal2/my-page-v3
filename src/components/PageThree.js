@@ -1,10 +1,24 @@
 import React from 'react';
-import NewsRequest from './API/NewsRequest'
+import { Container, Row, Col } from 'reactstrap';
+
+import InputLine from './API/Input';
+import NewsRequest from './API/NewsRequest';
 
 function PageTwo() {
     return (
         <div>
-            <NewsRequest />
+            <Container fluid>
+                <Row style={{marginTop: "4vw"}}>
+                    <Col sm="12" md={{ size: 6, offset: 3 }}>
+                        <InputLine />
+                    </Col>
+                </Row>
+                <Row style={{marginTop: "1vw"}}>
+                    <Col sm="12" md={{ size: 6, offset: 3 }}>
+                        <NewsRequest />
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

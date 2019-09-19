@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
-import { React_JS, Redux, ES6logo, CSSlogo, Less, Sass, Bootstrap, items } from './images';
+import { items } from './images';
 
 class CarouselReactStrapp extends Component {
     constructor(props) {

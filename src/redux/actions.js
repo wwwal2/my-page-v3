@@ -1,4 +1,5 @@
-const add = (payload) => ({type:"ADD", payload});
-const remove = (payload) => ({type:"REMOVE", payload});
+const add = (payload) => ({type: "ADD", payload});
+const remove = (payload) => ({type: "REMOVE", payload});
+const input = (payload) => ({type: "INPUT", payload});
 
-export { add, remove }
+export { add, remove, input }

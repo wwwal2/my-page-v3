@@ -27,7 +27,7 @@ class Cart extends React.Component {
                     </Card>
                 ))}
                 <div>
-                    <Card inverse style={{ backgroundColor: '#333', borderColor: '#333' }} inverse tag="h3">
+                    <Card style={{ backgroundColor: '#333', borderColor: '#333' }} inverse tag="h3">
                         Total price of all {this.props.totalOfAll.toFixed(2)}
                     </Card>
                 </div>

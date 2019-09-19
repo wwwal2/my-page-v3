@@ -1,6 +1,3 @@
-import img1 from './img1.jpg';
-import img2 from './img2.jpg';
-import img3 from './img3.jpg';
 import React_JS from './React_JS.png';
 import Redux from './Redux.jpg';
 import ES6logo from './ES6.jpeg';
@@ -47,16 +44,4 @@ const items = [
       },
   ];
 
-export {
-    img1,
-    img2, 
-    img3,
-    items,
-    React_JS,
-    Redux,
-    ES6logo,
-    CSSlogo,
-    Less,
-    Sass,
-    Bootstrap
-}
+export { items }

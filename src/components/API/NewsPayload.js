@@ -1,18 +1,28 @@
 import React from 'react';
+import { Card, CardText, CardHeader, CardLink, CardBody, CardImg, Button } from 'reactstrap';
 
 function NewsPayload(props) {
     return (
         <div>
-            {props.data.articles.map(item => {
-                return (
-                    <div style={{ borderBottom: "2px solid grey" }} key={item.source.id}>
-                        <div><h4>{item.title}</h4></div>
-                        <div><h5>{item.author}</h5></div>
-                        <div><p>{item.description}</p></div>
-                        <a href={item.url}> Follow the original article </a>
-                    </div>
-                )
-            })}
+            {
+                props.data.articles ?
+                    props.data.articles.map((item, index) => {
+                        return (
+                            <Card body inverse color="info" key={index}>
+                             <CardBody>
+                                    <CardHeader tag="h4">{item.title.toUpperCase()}</CardHeader>
+                                    
+                                </CardBody>
+                                <CardImg height="100%" src={item.urlToImage} alt="Card image cap" />
+                                <CardBody>
+                                    <CardText>{item.description}</CardText>
+                                    <Button href={item.url}> Follow the original article </Button>
+                                </CardBody>
+                            </Card>
+                        )
+                    })
+                    : null
+            }
         </div>
     )
 }

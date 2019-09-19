@@ -1,7 +1,8 @@
 import originalProducts from '../components/Shop/dataForShop';
 const initialState = {
     cartProducts: [],
-    totalOfAll: 0
+    totalOfAll: 0,
+    inputWord: ''
 };
 
 export const reducer = (state = initialState, action) => {
@@ -61,6 +62,17 @@ export const reducer = (state = initialState, action) => {
                     totalOfAll:removePrice
                 }
             }
+
+        case "INPUT":
+            if (action.payload.key === "Enter") {
+                return {
+                    ...state,
+                    inputWord: action.payload.target.value
+                }
+            } else {
+                return state
+            }
+
         default:
             return state;
     }
